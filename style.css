@@ -1,0 +1,63 @@
+* {
+    /*border: thin dotted grey;*/
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 20px;
+    background-color: darkgray;
+}
+main {
+    width: 700px;
+    height:600px;
+    border-radius: 10px;
+    /*background-color: #3F51B5;*/
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#turn {
+    margin-top: 20px;
+    width: 700px;
+    height: 50px;
+    border: thick solid black;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+
+}
+
+main > div {
+    position: relative;
+    overflow: hidden;
+    /*background-color: #3F51B5;*/
+    /*margin: 3px;*/
+    /*border-radius: 50%;*/
+    /*box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.4);*/
+
+}
+
+main > div::after {
+    position:absolute;
+    margin: 2%;
+    box-shadow: 0px 0px 0px 2000px #3F51B5;
+    border-radius: 100%;
+    width:95%;
+    height:95%;
+    content: '';
+}
+
+main > div:hover {
+    background-color: #c3c3c3;
+}
+
+
+.red {
+    background-color: #D32F2F;
+}
+
+.yellow {
+    background-color: #FFC107;
+}
